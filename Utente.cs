@@ -41,7 +41,7 @@ namespace w1_l4_Intro_OOP_3
 
                 if (scelta == 1)
                 {
-                    //Login();
+                    Login();
                 }
                 if (scelta == 2)
                 {
@@ -75,6 +75,27 @@ namespace w1_l4_Intro_OOP_3
                 Console.WriteLine("\t===============================================================================");
                 StartMenu();
             }
+        }
+        public static void Login()
+        {
+            Console.WriteLine("\nNome utente: ");
+            string Utente = Console.ReadLine();
+            Console.WriteLine("\nPassword: ");
+            string Password1 = Console.ReadLine();
+            Console.WriteLine("\nConferma Password ");
+            string Password2 = Console.ReadLine();
+            _username = Utente;
+            _password = Password1;
+            if (Password1 == Password2)
+            {
+                Console.WriteLine($"\n\tLe password inserite risultano uguali, benvenuto {Utente}.");
+                StartMenu();
+            }else
+            {
+                Console.WriteLine("\n\tLe password che hai inserito non sono uguali, riprova.");
+                StartMenu();
+            }
+
         }
     }
 }
