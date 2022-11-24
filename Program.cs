@@ -10,6 +10,9 @@ namespace w1_l4_Intro_OOP_3
     {
         static void Main(string[] args)
         {
+            //Utente.Username = Console.ReadLine();
+            //Utente.Password = Console.ReadLine();
+            Utente.StartMenu();
         }
     }
 }
