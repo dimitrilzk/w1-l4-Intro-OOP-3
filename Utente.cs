@@ -57,18 +57,22 @@ namespace w1_l4_Intro_OOP_3
                 }
                 if (scelta == 5)
                 {
-                    Console.WriteLine("Chiusura del programma...");
+                    Console.WriteLine("\n\nChiusura del programma...\n\n");
                 }
                 else
                 {
-                    Console.WriteLine("Hai selezionato una voce non valida");
+                    Console.WriteLine("\t==============================================");
+                    Console.WriteLine("\n\n\t\tHai selezionato una voce non valida.\n\n");
+                    Console.WriteLine("\t==============================================");
                     StartMenu();
                 }
 
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Hai digitato un valore non valido!");
+                Console.WriteLine("\t===============================================================================");
+                Console.WriteLine("\n\n\t\tHai digitato un valore non valido! Puoi scegliere tra 1 e 5, riprova.\n\n");
+                Console.WriteLine("\t===============================================================================");
                 StartMenu();
             }
         }
