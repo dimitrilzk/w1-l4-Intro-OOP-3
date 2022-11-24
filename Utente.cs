@@ -95,7 +95,11 @@ namespace w1_l4_Intro_OOP_3
                 Console.WriteLine("\n\tLe password che hai inserito non sono uguali, riprova.");
                 StartMenu();
             }
-
+        }
+        public static void Logout()
+        {
+            Console.WriteLine($"\nVuoi effettuare il logout {Utente.Username}? premi y/n ");
+            StartMenu();
         }
     }
 }
